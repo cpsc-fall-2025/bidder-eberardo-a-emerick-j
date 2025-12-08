@@ -75,12 +75,12 @@ int perRound(int rounds, int budget, int bids, int curr) {
     startPoint = 0;
 
     if (seed3B <= 2) {
-      seed3CB += budget/10; //Increase by 10%
+      seed3CB += budget/5; //Increase by 10%
     } else {
       seed3B = 0;
       seed3CB = 0;
 
-      return budget/5; //Increase by 20%
+      return budget/10; //Increase by 20%
 
     }
     //std::cout << seed3B << "  |  " << seed3CB << " - " << curr << " - " << rounds << std::endl;
